@@ -83,6 +83,24 @@ a {
     top: calc(150vh + 50vw);
 }
 
+#profile {
+    ul {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    li {
+        padding: 4px 0;
+    }
+}
+
+#certifications {
+    table {
+        margin: 0 auto;
+        text-align: center;
+        border-spacing: 16px;
+    }
+}
+
 .button {
     a {
         color: $dark_text;
@@ -109,12 +127,6 @@ $section_half_height: calc(50vh - #{$section_padding} * 2);
     padding: $section_padding;
     width: 100%;
 
-    .section-title {
-        margin: 0;
-        text-align: center;
-        font-size: 3rem;
-    }
-
     &.half {
         height: $section_half_height;
         // width: calc(50% - #{$section_padding} * 2);
@@ -129,9 +141,15 @@ $section_half_height: calc(50vh - #{$section_padding} * 2);
         background-color: $white_background;
         color: $white_text;
     }
-}
 
-.section-content {
-    margin: 0 auto;
-    width: 80vw;
+    .section-title {
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .section-content {
+        margin: 0 auto;
+        width: 80vw;
+    }
 }

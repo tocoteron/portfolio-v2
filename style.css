@@ -84,6 +84,21 @@ a {
   top: calc(150vh + 50vw);
 }
 
+#profile ul {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#profile li {
+  padding: 4px 0;
+}
+
+#certifications table {
+  margin: 0 auto;
+  text-align: center;
+  border-spacing: 16px;
+}
+
 .button a {
   color: #fafafa;
   display: block;
@@ -107,12 +122,6 @@ a {
   width: 100%;
 }
 
-.section-wrapper .section-title {
-  margin: 0;
-  text-align: center;
-  font-size: 3rem;
-}
-
 .section-wrapper.half {
   height: calc(50vh - 32px * 2);
 }
@@ -127,7 +136,13 @@ a {
   color: #483E3E;
 }
 
-.section-content {
+.section-wrapper .section-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.section-wrapper .section-content {
   margin: 0 auto;
   width: 80vw;
 }
