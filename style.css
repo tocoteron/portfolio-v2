@@ -135,13 +135,18 @@ a {
 
 .section-wrapper {
   font-size: 1.5rem;
-  height: calc(100vh - 32px * 2);
   padding: 32px;
   width: 100%;
 }
 
+.section-wrapper.full {
+  height: calc(100vh - 32px * 2);
+  min-height: 800px;
+}
+
 .section-wrapper.half {
   height: calc(50vh - 32px * 2);
+  min-height: 400px;
 }
 
 .section-wrapper.tile-dark {

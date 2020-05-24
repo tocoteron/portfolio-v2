@@ -137,17 +137,23 @@ a {
 }
 
 $section_padding: 32px;
-$section_height: calc(100vh - #{$section_padding} * 2);
+$section_full_height: calc(100vh - #{$section_padding} * 2);
 $section_half_height: calc(50vh - #{$section_padding} * 2);
+$section_full_min_height: 800px;
+$section_half_min_height: 400px;
 .section-wrapper {
     font-size: 1.5rem;
-    height: $section_height;
     padding: $section_padding;
     width: 100%;
 
+    &.full {
+        height: $section_full_height;
+        min-height: $section_full_min_height;
+    }
+
     &.half {
         height: $section_half_height;
-        // width: calc(50% - #{$section_padding} * 2);
+        min-height: $section_half_min_height;
     }
 
     &.tile-dark {
