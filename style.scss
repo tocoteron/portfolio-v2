@@ -124,6 +124,21 @@ a {
     }
 }
 
+#more {
+    .command {
+        margin: 0 auto;
+        padding: 8px;
+        width: 400px;
+        background-color: $dark_background;
+        border-radius: 8px;;
+
+        span {
+            font-size: 2rem;
+            color: $dark_text;
+        }
+    }
+}
+
 .data-table {
     margin: 0 auto;
     border-collapse: collapse;

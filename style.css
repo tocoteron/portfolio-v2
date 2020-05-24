@@ -119,6 +119,19 @@ a {
   text-align: center;
 }
 
+#more .command {
+  margin: 0 auto;
+  padding: 8px;
+  width: 400px;
+  background-color: #483E3E;
+  border-radius: 8px;
+}
+
+#more .command span {
+  font-size: 2rem;
+  color: #fafafa;
+}
+
 .data-table {
   margin: 0 auto;
   border-collapse: collapse;
