@@ -93,9 +93,27 @@ a {
   padding: 4px 0;
 }
 
+.data-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.data-table tr {
+  border-width: 2px;
+  border-style: dotted none;
+  border-color: #483E3E;
+}
+
+.data-table tr.table-header {
+  border: none;
+}
+
+.data-table tr th, .data-table tr td {
+  padding: 8px 32px;
+}
+
 #certifications table {
   margin: 0 auto;
-  text-align: center;
   border-spacing: 16px;
 }
 

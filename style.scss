@@ -93,10 +93,28 @@ a {
     }
 }
 
+.data-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    tr {
+        border-width: 2px;
+        border-style: dotted none;
+        border-color: $white_text;
+
+        &.table-header {
+            border: none;
+        }
+
+        th, td {
+            padding: 8px 32px;
+        }
+    }
+}
+
 #certifications {
     table {
         margin: 0 auto;
-        text-align: center;
         border-spacing: 16px;
     }
 }
