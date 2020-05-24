@@ -119,10 +119,35 @@ a {
   text-align: center;
 }
 
+#contacts address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#contacts address .contact-address {
+  margin: 32px;
+}
+
+#contacts address a img {
+  height: 200px;
+}
+
 #more .command {
+  position: relative;
   margin: 0 auto;
   padding: 8px;
-  width: 400px;
+  top: calc(50% - 2rem - 8px * 2);
+  width: 100%;
+  text-align: center;
   background-color: #483E3E;
   border-radius: 8px;
 }
@@ -202,5 +227,6 @@ a {
 .section-wrapper .section-content {
   margin: 0 auto;
   width: 80vw;
+  height: calc(100% - 5rem);
 }
 /*# sourceMappingURL=style.css.map */

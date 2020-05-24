@@ -124,11 +124,35 @@ a {
     }
 }
 
+#contacts {
+    address {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1rem;
+        text-align: center;
+        font-size: 2rem;
+
+        .contact-address {
+            margin: 32px;
+        }
+
+        a {
+            img {
+                height: 200px;
+            }
+        }
+    }
+}
+
 #more {
     .command {
+        position: relative;
         margin: 0 auto;
         padding: 8px;
-        width: 400px;
+        top: calc(50% - 2rem - 8px * 2);
+        width: 100%;
+        text-align: center;
         background-color: $dark_background;
         border-radius: 8px;;
 
@@ -214,5 +238,6 @@ $section_half_min_height: 400px;
     .section-content {
         margin: 0 auto;
         width: 80vw;
+        height: calc(100% - 5rem);
     }
 }
