@@ -2,13 +2,14 @@ function moveCatEyes(catEyes, mousePos) {
     catEyes.forEach(function (catEye) {
         var ClientXDiff = mousePos.x - catEye.client.centerPos.x;
         var ClientYDiff = mousePos.y - catEye.client.centerPos.y;
-        var ClientXRange = Math.min(Math.abs(ClientXDiff), catEye.client.size.width / 2 - parseFloat(catEye.ball.getAttribute("rx")) * 1.5);
-        var ClientYRange = Math.min(Math.abs(ClientYDiff), catEye.client.size.height / 2 - parseFloat(catEye.ball.getAttribute("ry")) * 1.5);
+        var ClientXRange = Math.min(Math.abs(ClientXDiff), (catEye.client.size.width - catEye.ball.getBoundingClientRect().width) / 2);
+        var ClientYRange = Math.min(Math.abs(ClientYDiff), (catEye.client.size.height - catEye.ball.getBoundingClientRect().height) / 2);
         var ClientToSVGCoeffX = catEye.svg.size.width / catEye.client.size.width;
         var ClientToSVGCoeffY = catEye.svg.size.height / catEye.client.size.height;
         var rad = Math.atan2(ClientYDiff, ClientXDiff);
         var CatEyeCX = catEye.svg.centerPos.x + ClientXRange * ClientToSVGCoeffX * Math.cos(rad);
         var CatEyeCY = catEye.svg.centerPos.y + ClientYRange * ClientToSVGCoeffY * Math.sin(rad);
+        console.log(ClientYRange);
         catEye.ball.setAttribute("cx", Math.round(CatEyeCX).toString());
         catEye.ball.setAttribute("cy", Math.round(CatEyeCY).toString());
     });
