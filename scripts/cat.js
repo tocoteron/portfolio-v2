@@ -9,7 +9,6 @@ function moveCatEyes(catEyes, mousePos) {
         var rad = Math.atan2(ClientYDiff, ClientXDiff);
         var CatEyeCX = catEye.svg.centerPos.x + ClientXRange * ClientToSVGCoeffX * Math.cos(rad);
         var CatEyeCY = catEye.svg.centerPos.y + ClientYRange * ClientToSVGCoeffY * Math.sin(rad);
-        console.log(ClientYRange);
         catEye.ball.setAttribute("cx", Math.round(CatEyeCX).toString());
         catEye.ball.setAttribute("cy", Math.round(CatEyeCY).toString());
     });
